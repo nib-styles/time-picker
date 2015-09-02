@@ -1,0 +1,10 @@
+{
+  "name": "time-picker",
+  "version": "0.0.3",
+  "styles": [
+    "index.css"
+  ],
+  "dependencies": {
+    "nib-styles/control": "^1.2.1"
+  }
+}
