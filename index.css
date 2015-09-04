@@ -37,11 +37,12 @@
   border-radius: 17px;
   text-align: center;
   transition: background 200ms;
-  color: #0a6d12;
+  color: #000000;
 }
 .timepicker__hours > div.timepicker-hour--enabled,
 .timepicker__minutes > div.timepicker-minute--enabled {
   color: #FFFFFF;
+  z-index: 10;
 }
 .timepicker__hours > div.timepicker-hour--enabled:hover,
 .timepicker__minutes > div.timepicker-minute--enabled:hover,
@@ -59,102 +60,7 @@
 .timepicker__minutes > div.timepicker-minute--enabled:active {
   background:  #0a6d12
 }
-.timepicker-hour__12 {
-  left: 92px;
-  top: 4px;
-}
-.timepicker-hour__1 {
-  left: 137px;
-  top: 17px;
-}
-.timepicker-hour__2 {
-  left: 166px;
-  top: 48px;
-}
-.timepicker-hour__3 {
-  left: 180px;
-  top: 95px;
-}
-.timepicker-hour__4 {
-  left: 166px;
-  top: 136px;
-}
-.timepicker-hour__5 {
-  left: 135px;
-  top: 170px;
-}
-.timepicker-hour__6 {
-  top: 181px;
-  left: 94px;
-}
-.timepicker-hour__7 {
-  left: 52px;
-  top: 170px;
-}
-.timepicker-hour__8 {
-  left: 19px;
-  top: 138px;
-}
-.timepicker-hour__9 {
-  top: 94px;
-  left: 7px;
-}
-.timepicker-hour__10 {
-  top: 50px;
-  left: 19px;
-}
-.timepicker-hour__11 {
-  left: 50px;
-  top: 17px;
-}
-.timepicker-minute__0 {
-  left: 92px;
-  top: 4px;
-}
-.timepicker-minute__5 {
-  left: 137px;
-  top: 18px;
-}
-.timepicker-minute__10 {
-  left: 168px;
-  top: 51px;
-}
-.timepicker-minute__15 {
-  top: 93px;
-  left: 180px;
-}
-.timepicker-minute__20 {
-  left: 168px;
-  top: 137px;
-}
-.timepicker-minute__25 {
-  left: 137px;
-  top: 168px;
-}
-.timepicker-minute__30 {
-  top: 182px;
-  left: 92px;
-}
-.timepicker-minute__35 {
-  left: 51px;
-  top: 170px;
-}
-.timepicker-minute__40 {
-  left: 18px;
-  top: 138px;
-}
-.timepicker-minute__45 {
-  top: 93px;
-  left: 4px;
-}
-.timepicker-minute__50 {
-  left: 18px;
-  top: 49px;
-}
-.timepicker-minute__55 {
-  left: 45px;
-  top: 18px;
-}
+
 .timepicker__time > div {
   height: 220px;
   width: 107px;
@@ -173,9 +79,6 @@ div.timepicker__pm {
   background: #0a6d12;
   width: 107px;
 }
-.timepicker__ampm {
-
-}
 
 div.timepicker__desc {
   color: #00AD28;
@@ -185,80 +88,32 @@ div.timepicker__desc {
 }
 
 .timepicker-hand {
-
+  height: 0;
 }
-
-.timepicker-hand__center {
-  border-radius: 5px;
-  width: 10px;
-  height: 10px;
-  background: #FFFFFF;
+.timepicker-hand__container {
   position: relative;
-  top: 105px;
+  height: 180px;
+  width: 180px;
+  top: 20px;
   margin: 0 auto;
-}
-.timepicker-hand__stick {
-  border: 1px solid #FFFFFF;
-  width: 60px;
-  position: relative;
-  margin: 0 auto;
+  transition: transform 300ms;
   z-index: 5;
 }
 
-.timepicker-hand__stick--12 {
-  transform: rotate(90deg);
-  top: 65px;
-}
-.timepicker-hand__stick--1 {
-  transform: rotate(120deg);
-  top: 68px;
-  left: 18px;
-}
-.timepicker-hand__stick--2 {
-  transform: rotate(150deg);
-  top: 83px;
-  left: 29px;
-}
-.timepicker-hand__stick--3 {
-  transform: rotate(180deg);
-  top: 99px;
-  left: 35px;
-}
-.timepicker-hand__stick--4 {
-  transform: rotate(210deg);
-  top: 117px;
-  left: 31px;
-}
-.timepicker-hand__stick--5 {
-  transform: rotate(240deg);
-  top: 125px;
-  left: 15px;
-}
-.timepicker-hand__stick--6 {
-  transform: rotate(270deg);
-  top: 134px;
-}
-.timepicker-hand__stick--7 {
-  transform: rotate(300deg);
-  top: 130px;
-  right: 17px;
-}
-.timepicker-hand__stick--8 {
-  transform: rotate(330deg);
-  top: 114px;
-  right: 27px;
-}
-.timepicker-hand__stick--9 {
-  top: 99px;
-  right: 30px;
-}
-.timepicker-hand__stick--10 {
-  transform: rotate(30deg);
+.timepicker-hand__center {
+  border-radius: 6px;
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  position: relative;
   top: 84px;
-  right: 28px;
+  margin: 0 auto;
 }
-.timepicker-hand__stick--11 {
-  transform: rotate(60deg);
-  top: 72px;
-  right: 16px;
+.timepicker-hand__stick {
+  border: 2px solid #FFFFFF;
+  height: 65px;
+  width: 0;
+  position: relative;
+  margin: 0 auto;
+  top: 14px;
 }
