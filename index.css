@@ -37,7 +37,7 @@
   border-radius: 17px;
   text-align: center;
   transition: background 200ms;
-  color: #000000;
+  color: #0a6d12;
 }
 .timepicker__hours > div.timepicker-hour--enabled,
 .timepicker__minutes > div.timepicker-minute--enabled {
